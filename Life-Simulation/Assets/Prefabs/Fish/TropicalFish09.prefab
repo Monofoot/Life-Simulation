@@ -11,9 +11,12 @@ GameObject:
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
   - component: {fileID: 11100000}
+  - component: {fileID: 114913303404723164}
+  - component: {fileID: 54028281825857972}
+  - component: {fileID: 65829139869675130}
   m_Layer: 0
   m_Name: TropicalFish09
-  m_TagString: Untagged
+  m_TagString: fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,3 +119,51 @@ Prefab:
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!54 &54028281825857972
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65829139869675130
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5348284, y: 4.1251926, z: 1.8791556}
+  m_Center: {x: 0.005228579, y: -0.0024927862, z: -0.040001612}
+--- !u!114 &114913303404723164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06154256196312548bc37f2e2935b6f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  egg: {fileID: 1496853207263592, guid: 60a3956c6a7f44049a7db96549994f21, type: 2}
+  newFish: {fileID: 0}
+  energy: 0
+  hunger: 0
+  speed: 0
+  birthRate: 0
+  interpolationPeriod: 1
+  gameTimer: 0
+  targetRot: {x: 0, y: 0, z: 0}
+  fishRigidBody: {fileID: 0}

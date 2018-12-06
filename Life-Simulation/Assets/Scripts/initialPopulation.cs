@@ -86,11 +86,9 @@ public class initialPopulation : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        instantiateFish(1);
+        instantiateFish(20);
         instantiateSharks(2);
         instantiateAlgae(200);
-        
-		
 	}
 	
 	// Update is called once per frame

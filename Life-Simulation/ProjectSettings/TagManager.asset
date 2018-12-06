@@ -10,8 +10,11 @@ TagManager:
   - boundaryZ
   - boundaryX1
   - shark
-  - fishSensor
   - food
+  - algae
+  - fish
+  - potentialMate
+  - test
   layers:
   - Default
   - TransparentFX

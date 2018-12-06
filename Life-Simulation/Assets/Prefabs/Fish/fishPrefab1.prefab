@@ -25,9 +25,10 @@ GameObject:
   - component: {fileID: 65082311039510062}
   - component: {fileID: 54952739871033154}
   - component: {fileID: 114865271232752518}
+  - component: {fileID: 65887545942869428}
   m_Layer: 0
   m_Name: fishPrefab1
-  m_TagString: Untagged
+  m_TagString: fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,13 +39,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1685871693991090}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 19.327652, y: 36.674038, z: 16.4258}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!23 &23204715010082824
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -114,6 +115,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6462071, y: 4.568341, z: 2.3490813}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65887545942869428
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1685871693991090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6462071, y: 4.568341, z: 2.3490813}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!111 &111006990040894332
 Animation:
   m_ObjectHideFlags: 1
@@ -139,6 +152,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06154256196312548bc37f2e2935b6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  switchState: 0
+  egg: {fileID: 1496853207263592, guid: 60a3956c6a7f44049a7db96549994f21, type: 2}
+  newFish: {fileID: 1685871693991090}
+  energy: 50
+  hunger: 0
+  speed: 0.1
+  birthRate: 0
+  interpolationPeriod: 1
   gameTimer: 0
-  hunger: 95
+  targetRot: {x: 0, y: 0, z: 0}
+  fishRigidBody: {fileID: 0}
